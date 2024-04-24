@@ -1,0 +1,96 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100;
+}
+form{
+    box-shadow: 0 0 20px rgb(10, 11, 22);
+    padding: 50px 35px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 320px;
+}
+form h2{
+    font-size: 35px;
+    color: #0D0D0D;
+    margin: 0;
+}
+form p{
+    font-size: 16px;
+    color: rgb(43, 74, 80);
+    margin-bottom: 35px;
+}
+.input-wrapped{
+    position: relative;
+    width: 305px;
+    margin-bottom: 35px;
+}
+input{
+    color: rgb(38, 39, 88);
+    padding: 10px 0px 10px 15px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px rgb(43, 74, 80);
+    font-size: 16px;
+}
+input::placeholder{
+    font-size: 16px;
+    color: rgb(40, 46, 92);
+}
+.input-list select,
+.input-text input,
+.input-text textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgb(43, 74, 80);
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+.input-list label,
+.input-text label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-text input {
+    height: 50px;
+}
+.input-text textarea {
+    width: 90%;
+    min-height: 50px;
+    resize: none;
+    box-shadow: 0 0 20px rgb(43, 74, 80);
+}
+.btn{
+    padding: 20px;
+    background: linear-gradient(
+        90deg,
+        rgb(212, 219, 255) 25%,
+        rgb(249, 252, 255) 100%);
+        text-transform: uppercase;
+        cursor: pointer;
+}
+.btn:hover {
+    background: rgb(40, 46, 92);
+    color: azure;
+}
+.success {
+    position: absolute;
+    top: 140px;
+    color: rgb(106, 218, 180);
+    font-size: 18px;
+}
+.error {
+    position: absolute;
+    top: 140px;
+    color: rgb(184, 76, 76);
+    font-size: 18px;
+}
